@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "length_input",
+        "paper_input",
+        "style_input"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\nYou are an expert research paper analyst.\n\nSummarize the research paper titled:\n\n\"{paper_input}\"\n\nFollow these specifications carefully:\n\n1. Explanation Style:\n   - Write the explanation in a {style_input} style.\n   - Adapt the technical depth and terminology to the selected style.\n\n2. Explanation Length:\n   - Follow the requested length: {length_input}.\n\n3. Mathematical Details:\n   - Include important mathematical equations, formulas, or\n     mathematical concepts from the paper when relevant.\n   - Explain each equation clearly and intuitively.\n   - If the selected style is Code-Oriented, provide short and\n     simple code snippets where they help explain the concept.\n\n4. Key Contributions:\n   - Explain the main problem addressed by the paper.\n   - Describe the proposed method or architecture.\n   - Highlight the major contributions.\n   - Explain the experimental setup and important findings.\n\n5. Analogies:\n   - Use simple, relatable analogies when they help clarify\n     complex concepts.\n\n6. Accuracy:\n   - Do not invent information.\n   - If a requested piece of information is not available\n     from the paper, write:\n     \"Insufficient information available\"\n\nMake the explanation clear, accurate, well-structured, and\nconsistent with the selected style and length.\n",
+    "template_format": "f-string",
+    "validate_template": true,
+    "_type": "prompt"
+}
